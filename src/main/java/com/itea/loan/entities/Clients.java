@@ -10,7 +10,7 @@ public class Clients {
     private Long id;
 
     @Column(nullable = false)
-    private String client_name;
+    private String clientName;
 
     @Column(nullable = false)
     private int age;
@@ -22,7 +22,7 @@ public class Clients {
     private String sex;
 
     @Column(nullable = false)
-    private Date birth_day;
+    private Date birthday;
 
     @Column(nullable = false, length = 15)
     private String ipn;

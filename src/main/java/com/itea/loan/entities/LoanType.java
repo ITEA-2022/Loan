@@ -3,7 +3,7 @@ package com.itea.loan.entities;
 import javax.persistence.*;
 
 @Entity
-public class Loan {
+public class LoanType {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

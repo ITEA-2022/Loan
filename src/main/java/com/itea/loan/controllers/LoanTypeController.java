@@ -1,6 +1,6 @@
 package com.itea.loan.controllers;
 
-import com.itea.loan.dto.LoanDto;
+import com.itea.loan.dto.LoanTypeDto;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -10,9 +10,9 @@ import javax.validation.Valid;
 
 @Validated
 @RestController
-public class LoanController {
-    @PostMapping("createLoan")
-    private String createLoan (@Valid @RequestBody LoanDto loanDto){
-        return "loan";
+public class LoanTypeController {
+    @PostMapping("createLoanType")
+    private String createLoanType (@Valid @RequestBody LoanTypeDto loanTypeDto){
+        return "loanType";
     }
 }
