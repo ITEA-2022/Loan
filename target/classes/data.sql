@@ -1,0 +1,3 @@
+--INSERT INTO public.currency(
+--	id, name)
+--	VALUES (1, 'UAH'),(2, 'USD'),(3, 'EUR');
