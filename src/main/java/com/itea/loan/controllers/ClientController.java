@@ -35,7 +35,7 @@ public class ClientController {
         //clientRepository.save(new Clients("name", 25, "address", "male", "20020101","1111111","passp"));
         //Clients client = new Clients("name");
         //clientRepository.save(client);
-        clientRepository.save(new Clients("name",25,"address","sex","b_day","ipn","pass"));
+        clientRepository.save(new Clients(clientdto.getClientName(),clientdto.getAge(),clientdto.getAddress(),clientdto.getSex(),clientdto.getBirth_day(),clientdto.getIpn(),clientdto.getPassport()));
         return ResponseEntity.ok(clientdto);
     }
 }
