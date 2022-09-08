@@ -2,9 +2,7 @@ package com.itea.loan.dto;
 
 import org.hibernate.validator.constraints.Length;
 
-import javax.persistence.Column;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
 import java.util.Date;
 
 public class ClientDto {
@@ -20,7 +18,7 @@ public class ClientDto {
     @Length(max = 6, min =1)
     private String sex;
     @NotBlank
-    private Date birth_day;
+    private Date birthday;
     @NotBlank
     @Length(max = 15, min =10)
     private String ipn;
@@ -60,12 +58,12 @@ public class ClientDto {
         this.sex = sex;
     }
 
-    public Date getBirth_day() {
-        return birth_day;
+    public Date getBirthday() {
+        return birthday;
     }
 
-    public void setBirth_day(Date birth_day) {
-        this.birth_day = birth_day;
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
     }
 
     public String getIpn() {
