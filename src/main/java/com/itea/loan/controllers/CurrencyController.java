@@ -11,7 +11,7 @@ import javax.validation.Valid;
 @Validated
 @RestController
 public class CurrencyController {
-    @PostMapping("createCurrency")
+    @PostMapping("currency")
     private String createCurrency(@Valid @RequestBody CurrencyDto currencyDto){
         return "currency";
     }
