@@ -11,7 +11,7 @@ import javax.validation.Valid;
 @Validated
 @RestController
 public class ManagerController {
-    @PostMapping("createManager")
+    @PostMapping("manager")
     private String createManager(@Valid @RequestBody ManagerDto managerDto){
         return "manager";
     }

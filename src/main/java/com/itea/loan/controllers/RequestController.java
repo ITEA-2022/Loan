@@ -11,7 +11,7 @@ import javax.validation.Valid;
 @Validated
 @RestController
 public class RequestController {
-    @PostMapping("createRequest")
+    @PostMapping("request")
     private String createRequest (@Valid @RequestBody RequestDto requestDto){
         return "request";
     }

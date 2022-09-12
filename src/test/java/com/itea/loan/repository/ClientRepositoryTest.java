@@ -26,9 +26,9 @@ public class ClientRepositoryTest {
 
         SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
 
-        clientRepository.save(new Client("Client1",12,"adresa1","male", formatter.parse("01-01-2001"),"11111111","aaa111"));
-        clientRepository.save(new Client("Client2",12,"adresa2","male", formatter.parse("01-01-2002"),"22222222","bbb2222"));
-        clientRepository.save(new Client("Client3",12,"adresa3","male", formatter.parse("01-01-2003"),"33333333","ccc333"));
+//        clientRepository.save(new Client("Client1",12,"adresa1","male", formatter.parse("01-01-2001"),"11111111","aaa111"));
+//        clientRepository.save(new Client("Client2",12,"adresa2","male", formatter.parse("01-01-2002"),"22222222","bbb2222"));
+//        clientRepository.save(new Client("Client3",12,"adresa3","male", formatter.parse("01-01-2003"),"33333333","ccc333"));
 
     }
 

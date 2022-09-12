@@ -11,7 +11,7 @@ import javax.validation.Valid;
 @Validated
 @RestController
 public class LoanTypeController {
-    @PostMapping("createLoanType")
+    @PostMapping("loanType")
     private String createLoanType (@Valid @RequestBody LoanTypeDto loanTypeDto){
         return "loanType";
     }

@@ -5,6 +5,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
 import java.util.Date;
 
 @Entity
@@ -36,7 +37,13 @@ public class Client {
     @Column(nullable = false, length = 15)
     private String passport;
 
-    public Client(String clientName, int age, String address, String sex, Date birthday, String ipn, String passport) {
+    @Column(nullable = false, unique = true)
+    @Email
+    private String email;
+
+
+
+    public Client(String clientName, int age, String address, String sex, Date birthday, String ipn, String passport, String email) {
         this.clientName = clientName;
         this.age = age;
         this.address = address;
@@ -44,5 +51,6 @@ public class Client {
         this.birthday = birthday;
         this.ipn = ipn;
         this.passport = passport;
+        this.email=email;
     }
 }
